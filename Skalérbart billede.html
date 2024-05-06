@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skalérbart Billede</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <img src="Billedemappe/Flora.jpeg" alt="Skalérbart Billede">
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Baggrundsfarve baseret på skærmstørrelse</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            .content {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                text-align: center;
+                color: white;
+            }
+    
+            /* Mobile First */
+            body {
+                background-color: blue;
+            }
+    
+            /* Skærmstørrelse: 601px - 959px */
+            @media only screen and (min-width: 601px) and (max-width: 959px) {
+                body {
+                    background-color: red;
+                }
+            }
+    
+            /* Skærmstørrelse: 960px eller mere */
+            @media only screen and (min-width: 960px) {
+                body {
+                    background-color: yellow;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            Baggrundsfarve baseret på skærmstørrelse
+        </div>
+</body>
+</html>
